@@ -2,7 +2,7 @@ version: 0.2
 
 env:
   variables:
-    _PROJECT_NAME: "user05-mypage"
+    _PROJECT_NAME: "user02-mypage"
 
 phases:
   install:
@@ -42,7 +42,7 @@ phases:
           kind: Service
           metadata:
             name: mypage
-            namespace: team05
+            namespace: user02
             labels:
               app: mypage
           spec:
@@ -58,7 +58,7 @@ phases:
           kind: Deployment
           metadata:
             name: mypage
-            namespace: team05
+            namespace: user02
             labels:
               app: mypage
           spec:
